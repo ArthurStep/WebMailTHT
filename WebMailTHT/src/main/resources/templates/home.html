@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebMailTHT | Home</title>
+</head>
+<body>
+<h3>Attack Ready</h3>
+<br>
+<h5> ***** ***** ***** ***** ***** </h5>
+<h5> : Disclaimer : </h5>
+<h5>The author of the program is not responsible for your actions.</h5>
+<h5> ***** ***** ***** ***** ***** </h5>
+<br>
+<br>
+
+<p th:text="${homemessage}"></p>
+
+<form action="/mail-attack-send" method="post">
+    <label>
+        <input type="email" name="usermailforattack" placeholder="Mail for attack:">
+    </label>
+    <label>
+        <input type="number" name="countforattack" placeholder="How many mails: ">
+    </label>
+    <label>
+        <input type="text" name="subjectforattack" placeholder="Send mail Subject field: ">
+    </label>
+    <label>
+        <input type="text" name="bodyforattack" placeholder="Send mail Body message: ">
+    </label>
+    <input type="submit">
+</form>
+
+</body>
+</html>
